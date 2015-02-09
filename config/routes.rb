@@ -18,6 +18,9 @@ Rails.application.routes.draw do
       post 'achievements'
       post 'update_achievements'
     end
+    collection do
+      get 'dashboard'
+    end
   end
 
 

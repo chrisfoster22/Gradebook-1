@@ -1,6 +1,6 @@
 <h1>Edit Achievements for <%= @student.name %></h1>
 
-<%= form_tag update_achievements_students_path do %>
+<%= form_tag update_achievements_students_path(@student) do %>
   <ul>
     <% @achievements.each do |t| %>
       <li>
