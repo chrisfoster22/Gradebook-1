@@ -13,14 +13,15 @@ class StudentsController < ApplicationController
 
   def achievements
     @achievements = Achievement.all
+    @students = Student.all
   end
 
   def update_achievements
     @student.achievements = []
-    params[:tags].keys.each do |a|
+    params[:achievements].keys.each do |a|
       @student.achievements << Achievement.find_by_id(a)
     end
-    redirect_to achievements_path
+    redirect_to achievements_student_path
   end
 
   def edit
