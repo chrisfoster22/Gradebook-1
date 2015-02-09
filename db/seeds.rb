@@ -7,31 +7,35 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 
-   Teacher.create(name:"Susan Smith", email:"SusanSmith@higher.edu", password:"SusanSmith")
-   Teacher.create(name:"Tom Teacher", email:"TomTeacher@higher.edu", password:"TomTeacher")
-   Teacher.create(name:"Bob Builder", email:"BobBuilder@higher.edu", password:"BobBuilder")
+   Teacher.create(name:"Chris Foster", email:"chris@email.edu", password:"password")
 
-   Grade.create(student_email: "sara@sara.com", assignment_name: "homework 1", due_on: "2015-01-02", score: 98)
-   Grade.create(student_email: "sara@sara.com", assignment_name: "homework 2", due_on: "2015-01-03", score: 95)
-   Grade.create(student_email: "emily@emily.com", assignment_name: "homework 1", due_on: "2015-01-02", score: 85)
-   Grade.create(student_email: "emily@emily.com", assignment_name: "homework 2", due_on: "2015-01-03", score: 87)
-   Grade.create(student_email: "john@john.com", assignment_name: "homework 1", due_on: "2015-01-02", score: 60)
-   Grade.create(student_email: "john@john.com", assignment_name: "homework 2", due_on: "2015-01-03", score: 63)
-   Grade.create(student_email: "mark@mark.com", assignment_name: "homework 1", due_on: "2015-01-02", score: 96)
-   Grade.create(student_email: "mark@mark.com", assignment_name: "homework 2", due_on: "2015-01-03", score: 99)
-   Grade.create(student_email: "stacy@stacy.com", assignment_name: "homework 1", due_on: "2015-01-02", score: 86)
-   Grade.create(student_email: "stacy@stacy.com", assignment_name: "homework 2", due_on: "2015-01-03", score: 82)
+   Achievement.create(name: "Essay", description: "Write an essay about a book
+   you read using provided rubric.", points: 400)
 
-   Student.create(name:"sara", student_email:"sara@sara.com", password:"sara", teacher_id: 1)
-   Student.create(name:"emily", student_email:"emily@emily.com", password:"emily", teacher_id: 1)
-   Student.create(name:"john", student_email:"john@john.com", password:"john", teacher_id: 2)
-   Student.create(name:"james", student_email:"james@james.com", password:"james", teacher_id: 2)
-   Student.create(name:"mark", student_email:"mark@mark.com", password:"mark", teacher_id: 3)
-   Student.create(name:"stacy", student_email:"stacy@stacy.com", password:"stacy", teacher_id: 3)
+   Achievement.create(name: "Class Presentation", description: "Fifteen minute
+   in-depth presentation about an approved book.", points: 800)
 
-   Parent.create(name:"dad", email: "dad@dad.com", password: "dad", child_name: "sara")
-   Parent.create(name:"mom", email: "mom@mom.com", password: "mom", child_name: "emily")
-   Parent.create(name:"herschel", email: "herschel@herschel.com", password: "herschel", child_name: "john")
-   Parent.create(name:"micah", email: "micah@micah.com", password: "micah", child_name: "james")
-   Parent.create(name:"Sandy", email: "Sandy@Sandy.com", password: "Sandy", child_name: "mark")
-   Parent.create(name:"Joey", email: "Joey@Joey.com", password: "Joey", child_name: "stacy")
+   Achievement.create(name: "Participation", description: "Add to a class discussion
+   in a substantial way.", points: 50)
+
+   Achievement.create(name: "Character Analysis", description: "Write an in-depth
+   analysis of one character in an approved book.", points: 400)
+
+   Achievement.create(name: "Creative Writing Piece", description: "Write a creative
+   writing piece using at least one of the conventions covered in class.", points: 400)
+
+   Achievement.create(name: "Theme Analysis", description: "Write an in-depth
+   analysis of the theme of an approved book.", points: 400)
+
+   Achievement.create(name: "Test", description: "Score at least an 80 on a
+   test.", points: 300)
+
+   Achievement.create(name: "Science Experiment", description: "Follow the scientific
+   method while carrying out an experiment and explain your process in a short
+   essay.", points: 400)
+
+   Achievement.create(name: "Visual Presentation", description: "Eight minute
+   visual presentation, such as acting out a scene.", points: 600)
+
+   Achievement.create(name: "Recipe", description: "Create a recipe that explains
+   the science behind what is going on when different ingredients interact.", points: 400)
