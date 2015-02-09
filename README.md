@@ -1,2 +1,7 @@
-Make it possible to give any or all of the achievements to any or all of your students. Do this by adding a member action to your students controller. Call it achievements. On the achievements view, show checkboxes for all of the possible achievements, and allow teachers to give out achievements to the student by checking the appropriate boxes and submitting. Add a link to achievements for each student on the achievements list page.
-If you have time, modify what students and parents see when they log in to reflect achievements rather than grades.
+# Gradebook
+
+Update 2/9 - Students' achievements are displayed under their names.
+
+This app allows multiple teachers to track their student's grades by assignment. The app also allows both students and parents to log into the system to check the student's grades.
+
+If you would like to access the samples we have included in the app, you can reference the seed.rb which will provide a list of sample users. Depending on the user's authorization rights, they will be limited in what information they can access.
